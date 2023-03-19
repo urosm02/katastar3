@@ -30,22 +30,22 @@ export default function ScheduleMeetingScreen({navigation}) {
             }}
 
       theme={{
-        backgroundColor: 'lightgreen',
+        backgroundColor: '#336633',
         calendarBackground: '#ffffff',
         textSectionTitleColor: '#b6c1cd',
         textSectionTitleDisabledColor: '#d9e1e8',
-        selectedDayBackgroundColor: 'lightgreen',
+        selectedDayBackgroundColor: '#336633',
         selectedDayTextColor: 'white',
-        todayTextColor: 'lightgreen',
+        todayTextColor: '#336633',
         dayTextColor: '#2d4150',
         textDisabledColor: '#d9e1e8',
         dotColor: '#00adf5',
         selectedDotColor: '#ffffff',
         arrowColor: 'orange',
         disabledArrowColor: '#d9e1e8',
-        monthTextColor: 'lightgreen',
-        indicatorColor: 'lightgreen',
-        arrowColor:'lightgreen'
+        monthTextColor: '#336633',
+        indicatorColor: '#336633',
+        arrowColor:'#336633'
       }}/>
       <TouchableOpacity onPress={()=>pressHandler()} style={styles.button}>
         <Text style={styles.buttonText}>Schedule A Meeting</Text>
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
     height: 45,
     width:300,
     borderRadius: 25,
-    backgroundColor: 'lightgreen',
+    backgroundColor: '#336633',
     alignItems: 'center',
     justifyContent: 'center',
   },

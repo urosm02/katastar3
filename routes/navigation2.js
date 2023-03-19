@@ -8,6 +8,7 @@ import LoginScreen from '../screens/login';
 import {AuthContext} from '../context/AuthContext';
 import SplashScreen from '../screens/SplashScreen';
 import ScheduleMeetingScreen from '../screens/scheduleMeetingScreen';
+import CompanyScreen from '../screens/companyScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -19,29 +20,17 @@ const Navigation2 = () => {
       <Stack.Navigator screenOptions={{
     headerShown: false
   }}>
-    
-      {splashLoading ? (
-          <Stack.Screen
-            name="Splash Screen"
-            component={SplashScreen}
-            options={{headerShown: true}}
-          />
-        ) : userInfo.access_token ? (
-            <>
-                <Stack.Screen name="Home" component={Home} />
-                <Stack.Screen name="Schedule" component={ScheduleMeetingScreen} />
-                
-                
-            </>
-        ) : (
-          <>
+      <>
             <Stack.Screen
               name="Login"
               component={LoginScreen}
-              options={{headerShown: false}}
-            />
-          </>
-        )}
+              options={{headerShown: false}}/>
+            <Stack.Screen name="Home" component={Home} />
+            <Stack.Screen name="Schedule" component={ScheduleMeetingScreen} />
+            <Stack.Screen name="CompanyScreen" component={CompanyScreen} />
+            
+            </>
+
       </Stack.Navigator>
     </NavigationContainer>
   );

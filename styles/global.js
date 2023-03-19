@@ -17,7 +17,7 @@ export const globalStyles = StyleSheet.create({
     height: 50,
     borderRadius: 25,
     borderWidth: 2,
-    borderColor: 'lightgreen',
+    borderColor: '#336633',
     paddingLeft: 20,
     marginBottom: 20,
   },
@@ -25,7 +25,7 @@ export const globalStyles = StyleSheet.create({
     width: '80%',
     height: 50,
     borderRadius: 25,
-    backgroundColor: 'lightgreen',
+    backgroundColor: '#336633',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -34,13 +34,31 @@ export const globalStyles = StyleSheet.create({
     color: 'white',
     fontWeight: 'bold',
   },
+  emotionButtonText: {
+    fontSize: 16,
+    color: '#336633',
+    fontWeight:'bold'
+    
+  },
   bigText: {
     fontSize: 20,
     color: 'black',
     fontWeight: 'bold',
   },
+  emotionButton: {
+    width: 100,
+    height: 50,
+    margin: 5,
+    borderRadius: 25,
+    borderWidth:2,
+    
+    borderColor:'#336633',
+    backgroundColor: 'grey',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   bigWhiteText: {
-    fontSize: 25,
+    fontSize: 20,
     color: 'white',
     fontWeight: 'bold',
     textShadowColor: 'rgba(0, 0, 0, 0)',
